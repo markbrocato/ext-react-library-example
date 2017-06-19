@@ -3,6 +3,7 @@ const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const OpenBrowserPlugin = require('open-browser-webpack-plugin');
 const CopyWebpackPlugin = require('copy-webpack-plugin');
+const ExtReactWebpackPlugin = require('@extjs/reactor-webpack-plugin');
 
 const sourcePath = path.join(__dirname, './src');
 
@@ -13,6 +14,9 @@ module.exports = function (env) {
     const plugins = [
         new webpack.EnvironmentPlugin({
             NODE_ENV: nodeEnv
+        }),
+        new ExtReactWebpackPlugin({
+            production: true
         })
     ];
 
@@ -36,9 +40,6 @@ module.exports = function (env) {
     }
 
     plugins.push(
-        new CopyWebpackPlugin([
-            { from: '../node_modules/my-lib/dist/ext-react', to: 'my-lib' }
-        ]), 
         new HtmlWebpackPlugin({
             template: 'index.html',
             hash: true
