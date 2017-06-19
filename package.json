@@ -1,0 +1,17 @@
+{
+  "name": "ext-react-library-example",
+  "version": "1.0.0",
+  "description": "A foundation for React apps built with ExtReact components.",
+  "main": "index.js",
+  "scripts": {
+    "postinstall": "lerna bootstrap",
+    "clean": "lerna clean",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "cd packages/my-lib && npm run build && cd ../my-app && npm start"
+  },
+  "author": "Sencha, Inc.",
+  "license": "MIT",
+  "devDependencies": {
+    "lerna": "^2.0.0-rc.5"
+  }
+}
