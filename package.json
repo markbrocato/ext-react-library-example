@@ -6,7 +6,7 @@
     "postinstall": "lerna bootstrap",
     "clean": "lerna clean",
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "cd packages/my-lib && npm run build && cd ../my-app && npm start"
+    "start": "cd packages/my-app && npm start"
   },
   "author": "Sencha, Inc.",
   "license": "MIT",

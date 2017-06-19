@@ -1,5 +1,6 @@
 import React from 'react'
-import { StocksGrid, LoginForm } from 'my-lib';
+import { StocksGrid } from 'my-grids';
+import { LoginForm } from 'my-forms';
 
 /**
  * The main application view
