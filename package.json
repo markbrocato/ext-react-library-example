@@ -1,8 +1,7 @@
 {
   "name": "ext-react-library-example",
   "version": "1.0.0",
-  "description": "A foundation for React apps built with ExtReact components.",
-  "main": "index.js",
+  "description": "This example project shows how to create a library of React components based on ExtReact.",
   "scripts": {
     "postinstall": "lerna bootstrap",
     "clean": "lerna clean",
